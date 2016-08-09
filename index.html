@@ -23,9 +23,46 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-
 <link rel="stylesheet" href="assets/style.css">
 
+<style>
+    .category-img{
+        display: block;
+        width:100%;
+        position:relative;
+        overflow:hidden;
+        margin: 0 auto;
+        margin-bottom:15px;
+    }
+
+    .category-img figcaption{
+        display:table;
+        width:100%;
+    }
+
+    .category-img h2{
+        display:table-cell;
+        vertical-align:middle;
+        font-size:1.4em;
+        text-align:center;
+        width:100%;
+        padding: 6px 4px;
+    }
+
+    #categorias{
+        margin-top:40px;
+    }
+
+    #categorias a{
+        color: #cf4696;
+    }    
+    #categorias a:hover{
+        text-decoration:none;
+        color:#fff;
+        background-color:#cf4696;
+        opacity:0.95;
+    }
+</style>
 
 </head>
 
@@ -38,7 +75,7 @@
           <div class="container">
             <div class="navbar-header">
               <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="logo"></a>
+              <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
               <!-- #Logo Ends -->
 
 
@@ -48,9 +85,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-
             </div>
-
 
             <!-- Nav Starts -->
             <div class="navbar-collapse  collapse">
@@ -58,16 +93,16 @@
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Arte y Cultura</a></li>
-                        <li><a href="#">Estilos de Vida y Ocio</a></li>
-                        <li><a href="#">Deportes y Aventura</a></li>
-                        <li><a href="#">Ciencia y Tecnolog&iacute;a</a></li>
-                        <li><a href="#">Naturaleza y Turismo</a></li>     
-                        <li><a href="#">Gastronom&iacute;a</a></li>                   
+                        <li><a href="arte-y-cultura.html">Arte y Cultura</a></li>
+                        <li><a href="ciencia-y-tecnologia.html">Ciencia y Tecnolog&iacute;a</a></li>
+                        <li><a href="deportes-y-aventura.html">Deportes y Aventura</a></li>
+                        <li><a href="estilo-de-vida-y-ocio.html">Estilo de Vida y Ocio</a></li>
+                        <li><a href="gastronomia.html">Gastronom&iacute;a</a></li>
+                        <li><a href="noticias-y-galeria.html">Noticias y Galer&iacute;a</a></li>                 
                     </ul>
                  </li>
-                 <li ><a href="#about">Acerca</a></li>
-                 <li ><a href="#contact">Contacto</a></li>
+                 <li><a href="#about">Acerca</a></li>
+                 <li><a href="#contact">Contacto</a></li>
               </ul>
             </div>
             <!-- #Nav Ends -->
@@ -101,77 +136,88 @@
             <div class="col-sm-6 col-md-8">
                 <!-- 16:9 aspect ratio -->
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RVZ0-xCO-nI" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h40FMkYflkE" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="featured-vid-info">
-                    <h4>Categor&iacute;a</h4>
-                    <p>Naturaleza y Turismo</p>
-                    <h4>Reseña</h4>
-                    <p>Snorkeleando en Pelican Rock</p>
+                    <h4>Video intro - The Best From </h4>
                     <div class="fb-like" data-href="https://thebestfrom.github.io/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
                 </div>
             </div>
         </div>
     </div>
-        
 </div>
 
-
-<!-- works -->
-<div id="works"  class=" clearfix grid"> 
-    <figure class="effect-oscar  wowload fadeIn">
-        <img src="images/portfolio/1.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Deportes y Aventura</h2>
-            <p>
-            <a href="#" title="1" data-gallery>Ver videos</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/2.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Estilos de Vida y Ocio</h2>
-            <p>
-            <a href="#" title="1" data-gallery>Ver videos</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/3.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Arte y Cultura</h2>
-            <p>
-            <a href="#" title="1" data-gallery>Ver videos</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/4.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Ciencia y Tecnologia</h2>
-            <p>
-            <a href="#" title="1" data-gallery>Ver videos</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/5.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Naturaleza y Turismo</h2>
-            <p>
-            <a href="#" title="1" data-gallery>Ver videos</a></p>            
-        </figcaption>
-    </figure>
-     
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/6.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Gastronom&iacute;a</h2>
-            <p>
-            <a href="#" title="1" data-gallery>Ver videos</a></p>            
-        </figcaption>
-    </figure>
-</div>
-<!-- works -->
+<!-- section categories -->
+<section id="categorias"  class="clearfix">
+    <h1 class="text-center">Categorias</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="category-img" href="deportes-y-aventura.html">
+                    <figure class="wowload fadeIn">
+                        <img class="img-responsive" src="images/categorias/DEPORTE-Y-AVENTURA.jpg" alt="deportes y aventura"/>
+                        <figcaption>
+                            <h2>Deportes y Aventura</h2>           
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="category-img" href="estilo-de-vida-y-ocio.html">
+                    <figure class="wowload fadeIn">
+                        <img class="img-responsive" src="images/categorias/ESTILO-DE-VIDA-Y-OCIO.jpg" alt=""/>
+                        <figcaption>
+                            <h2>Estilo de Vida y Ocio</h2>           
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="category-img" href="arte-y-cultura.html">
+                    <figure class="wowload fadeIn">
+                        <img class="img-responsive" src="images/categorias/ARTE-Y-CULTURA.jpg" alt="Arte y cultura"/>
+                        <figcaption>
+                            <h2>Arte y Cultura</h2>           
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="category-img" href="ciencia-y-tecnologia.html">
+                    <figure class="wowload fadeIn">
+                        <img class="img-responsive" src="images/categorias/CIENCIA-Y-TECNOLOGIA.jpg" alt="Ciencia y tecnología"/>
+                        <figcaption>
+                            <h2>Ciencia y Tecnolog&iacute;a</h2>           
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="category-img" href="gastronomia.html">
+                    <figure class="wowload fadeIn">
+                        <img class="img-responsive" src="images/categorias/GASTRONOMIA.jpg" alt="Gastronomía"/>
+                        <figcaption>
+                            <h2>Gastronom&iacute;a</h2>           
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="category-img" href="noticias-y-galeria.html">
+                    <figure class="wowload fadeIn">
+                        <img class="img-responsive" src="images/categorias/Noticias-y-Galeria.jpg" alt="Noticias y Galería"/>
+                        <figcaption>
+                            <h2>Noticias y Galer&iacute;a</h2>           
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- categories -->
 
 
 <!-- Cirlce Starts -->

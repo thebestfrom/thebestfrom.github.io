@@ -254,3 +254,7 @@ p{font-size:1.4em;line-height: 1.7em; margin-bottom: 1.7em;}
 /*categorias */
 
 #works {padding-top: 0;}
+
+.video-frame{
+	margin-bottom:30px;
+}
